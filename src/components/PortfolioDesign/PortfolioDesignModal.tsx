@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { X, Info } from "lucide-react";
+import { X } from "lucide-react";
 
 export type PortfolioDesignModalProps = {
   image: string;
@@ -16,8 +16,6 @@ export default function PortfolioDesignModal({
   description,
   onClose,
 }: PortfolioDesignModalProps) {
-  const [showInfo, setShowInfo] = useState(false);
-
   // Fechar com ESC
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -25,6 +23,21 @@ export default function PortfolioDesignModal({
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
+  }, [onClose]);
+
+  // Fechar com botão "back" do device
+  useEffect(() => {
+    const handlePopState = () => {
+      onClose();
+    };
+
+    // Adiciona um estado no histórico
+    window.history.pushState(null, "", window.location.href);
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
   }, [onClose]);
 
   return (
@@ -35,17 +48,17 @@ export default function PortfolioDesignModal({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        {/* Desktop modal */}
-        <div className="hidden md:flex relative poiter flex-col bg-white dark:bg-gray-900 rounded-lg overflow-hidden max-w-5xl w-full pt-1">
+        {/* Desktop modal (sem alteração) */}
+        <div className="hidden md:flex relative flex-col bg-white dark:bg-gray-900 rounded-lg overflow-hidden max-w-5xl w-full pt-1">
           <button
-            className="absolute cursor-pointer top-1 right-1 text-gray-200 hover:text-white z-50 bg-gray-500"
+            className="absolute top-4 right-4 z-50 text-white bg-black/50 rounded-full p-2"
             onClick={onClose}
           >
-            <X size={35} />
+            <X size={30} />
           </button>
 
-          <div className="relative w-full h-[70vh]">
-            <Image src={image} alt="Design" fill className="object-contain" />
+          <div className="relative w-full h-[90vh]">
+            <Image src={image} alt="Design" fill className="object-cover" />
           </div>
 
           {description && (
@@ -55,27 +68,26 @@ export default function PortfolioDesignModal({
           )}
         </div>
 
-        {/* Mobile fullscreen */}
+        {/* Mobile fullscreen (ajustado) */}
         <div className="md:hidden relative w-full h-full bg-black flex flex-col">
+          {/* Botão fechar no topo direito */}
+          <button
+            className="absolute top-4 right-4 bg-black/60 text-white p-2 rounded-full z-50"
+            onClick={onClose}
+          >
+            <X size={24} />
+          </button>
+
+          {/* Imagem */}
           <div className="relative flex-1">
             <Image src={image} alt="Design" fill className="object-contain" />
           </div>
 
+          {/* Descrição sempre visível */}
           {description && (
-            <>
-              <button
-                className="absolute bottom-4 right-4 bg-black/60 text-white p-2 rounded-full"
-                onClick={() => setShowInfo(!showInfo)}
-              >
-                <Info size={22} />
-              </button>
-
-              {showInfo && (
-                <div className="bg-black/80 text-white p-4 text-center">
-                  {description}
-                </div>
-              )}
-            </>
+            <div className="bg-black/80 text-white p-4 text-center">
+              {description}
+            </div>
           )}
         </div>
       </motion.div>

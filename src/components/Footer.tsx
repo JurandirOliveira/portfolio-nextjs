@@ -23,25 +23,26 @@ export default function Footer() {
               Jurandir Oliveira
             </h2>
             <p className="text-sm text-gray-300 mt-1">
-              Desenvolvedor Front-End & Designer. <br />
+              Desenvolvedor Front-End, Designer e Ilustrador. </p>
+            <p className="text-sm text-gray-300 mt-1 hidden md:block">
               Criando soluções digitais com código e criatividade.
             </p>
           </div>
         </div>
 
         {/* Links de navegação */}
-        <div className="flex justify-center space-x-8">
+        <div className="flex justify-center space-x-13">
           <Link
             href="/portfolio/dev"
             className="text-gray-200 hover:text-blue-400 font-medium"
           >
-            💻 Portfólio Front-End
+            💻 Front-End
           </Link>
           <Link
             href="/portfolio/design"
             className="text-gray-200 hover:text-blue-400 font-medium"
           >
-            🎨 Portfólio Design
+            🎨 Design e Ilustração
           </Link>
         </div>
 
