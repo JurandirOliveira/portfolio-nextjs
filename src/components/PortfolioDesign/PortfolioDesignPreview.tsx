@@ -8,7 +8,7 @@ export default function PortfolioDesignPreview() {
   const highlighted = designProjects.filter((p) => p.highlight);
 
   return (
-    <section id="portfolio-design" className="mt-10 py-12 px-4 sm:px-6 lg:px-12  bg-blue-100 dark:bg-gray-900">
+    <section id="portfolio-design" className="mt-4 py-10 px-4 sm:px-6 lg:px-12  bg-blue-100 dark:bg-gray-900">
         <div className="w-full">
         <div className="text-center md:text-left mb-10">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
@@ -25,7 +25,6 @@ export default function PortfolioDesignPreview() {
         <div
           key={project.id}
           className={
-            // esconde o último item se não for tela 2xl
             index === 2 ? "hidden lg:block" : index === 3 ? "hidden 2xl:block" : ""
           }
         >

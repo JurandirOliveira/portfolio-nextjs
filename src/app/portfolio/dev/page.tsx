@@ -19,7 +19,10 @@ export default function PortfolioDevPage() {
       : projects.filter((p) => p.stack.includes(filter));
 
   return (
-    <section id="portfolio-dev" className="w-full py-12 bg-blue-100 dark:bg-gray-900">
+    <section
+      id="portfolio-dev"
+      className="w-full py-5 bg-blue-100 dark:bg-gray-900"
+    >
       <div className="px-6">
         {/* Cabeçalho */}
         <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
@@ -33,18 +36,35 @@ export default function PortfolioDevPage() {
           </div>
 
           {/* Dropdown dinâmico */}
-          <select
-            className="bg-white dark:bg-gray-800 border rounded-lg px-3 py-2 text-gray-900 dark:text-gray-100"
-            onChange={(e) => setFilter(e.target.value)}
-            value={filter}
-          >
-            <option value="all">Todas as tecnologias</option>
-            {allSkills.map((skill) => (
-              <option key={skill} value={skill}>
-                {skill}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              className="bg-white dark:bg-gray-800 border rounded-lg px-3 py-2 text-gray-900 dark:text-gray-100 pr-10 appearance-none"
+              onChange={(e) => setFilter(e.target.value)}
+              value={filter}
+            >
+              <option value="all">Todas as categorias</option>
+              {allSkills.map((skill) => (
+                <option key={skill} value={skill}>
+                  {skill}
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-700 dark:text-gray-300">
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
 
         {/* Grid com animações */}

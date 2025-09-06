@@ -8,7 +8,7 @@ type PortfolioDesignGridProps = {
 
 export default function PortfolioDesignGrid({ projects }: PortfolioDesignGridProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 justify-items-center">
       {projects.map((p, i) => (
         <PortfolioDesignCard key={p.id ?? i} {...p} />
       ))}

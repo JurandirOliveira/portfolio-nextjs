@@ -1,6 +1,5 @@
 // app/portfolio/dev/[slug]/page.tsx
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects-dev";
 import { Logo } from "@/components/Logo";
@@ -71,7 +70,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
 
         {/* Botões principais */}
         <div className="flex flex-wrap justify-between items-center gap-4">
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             {project.demo && (
               <Link
                 href={project.demo}
@@ -91,16 +90,27 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               </Link>
             )}
           </div>
+          <div className="flex gap-5">
+           {prevProject && (
+            <Link
+              href={`/portfolio/dev/${prevProject.slug}`}
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+            >
+              <span className="text-xl">←</span>
+              Anterior
+            </Link>
+          )}
 
           {nextProject && (
             <Link
               href={`/portfolio/dev/${nextProject.slug}`}
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
             >
-              Próximo: {nextProject.title}
+              Próximo
               <span className="text-xl">→</span>
             </Link>
           )}
+          </div>
         </div>
       </div>
     </section>

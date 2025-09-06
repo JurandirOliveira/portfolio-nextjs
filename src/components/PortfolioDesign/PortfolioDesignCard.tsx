@@ -13,7 +13,6 @@ export type DesignCardProps = {
 };
 
 export default function PortfolioDesignCard({
-  id,
   image,
   description,
   section,
@@ -23,7 +22,7 @@ export default function PortfolioDesignCard({
   return (
     <>
       <div
-        className="relative w-full h-60 sm:h-72 md:h-80 cursor-pointer overflow-hidden rounded-lg shadow hover:shadow-lg transition "
+        className="relative w-80  h-65 sm:w-full sm:h-120 md:h-80 cursor-pointer overflow-hidden rounded-lg shadow hover:shadow-lg transition "
         onClick={() => setOpen(true)}
       >
         <Image

@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white dark:bg-black">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="flex-1 p-4">{children}</main>
+          <main className="flex-1 p-0 md:p-4">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

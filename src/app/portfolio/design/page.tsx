@@ -35,22 +35,38 @@ export default function PortfolioDesignPage() {
         </div>
 
         {/* Dropdown de filtro */}
-        <div className="flex justify-end mb-8">
+        <div className="flex justify-end mb-8 relative">
           <select
             value={selectedSection}
             onChange={(e) => setSelectedSection(e.target.value)}
-            className="px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200"
-          >
+            className="bg-white dark:bg-gray-800 border rounded-lg px-3 py-2 text-gray-900 dark:text-gray-100 pr-10 appearance-none"          >
             {sections.map((section) => (
               <option key={section.id} value={section.id}>
                 {section.label}
               </option>
             ))}
           </select>
+                   <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-700 dark:text-gray-300">
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
         </div>
 
         {/* Renderizar os projetos filtrados */}
-        <PortfolioDesignGrid projects={filteredProjects} />
+
+        <PortfolioDesignGrid projects={filteredProjects}/>
+
       </div>
     </section>
   );

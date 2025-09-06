@@ -15,7 +15,7 @@ export default function PortfolioDevPreview() {
   };
 
   return (
-    <section id="portfolio-dev" className="py-12 px-4 sm:px-6 lg:px-12  bg-blue-100 dark:bg-gray-900">
+    <section id="portfolio-dev" className="py-10 px-4 sm:px-6 lg:px-12 bg-blue-100 dark:bg-gray-900">
       <div className="w-full">
         {/* Cabeçalho da seção */}
         <div className="text-center md:text-left mb-10">

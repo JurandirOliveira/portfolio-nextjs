@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-[#1a365d] dark:bg-gray-900 shadow-lg">
       {/* Container principal sem max-width */}
-      <div className="flex items-end justify-between px-8 pr-1 py-3 md:px-8">
+      <div className="flex items-end justify-between px-8 py-3 pr-0 md:px-5">
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -53,13 +53,6 @@ export default function Navbar() {
           >
            🎨 Portfolio Design
           </NavButton>
-          
-          {/* <NavButton 
-            href="/portfolio/sobre"
-            active={activeLink === 'sobre'}
-          >
-            Sobre mim
-          </NavButton> */}
 
           {/* Botão para baixar currículo */}
           <button
@@ -74,20 +67,26 @@ export default function Navbar() {
         </div>
 
         {/* Container mobile - Toggle e Menu button lado a lado */}
-        <div className="md:hidden flex items-center gap-3">
-          
-          <button
-            className="text-white p-2 rounded-lg hover:bg-[#3a496f]/60 transition-colors"
-            onClick={toggleMenu}
-            aria-label="Abrir menu"
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-          <ThemeToggle />
+        
+          <div className="md:hidden flex items-center justify-center">
+          {/* ThemeToggle acima do botão de menu */}
+          <div className="flex flex-col items-center gap-8">
+            <ThemeToggle />
+            <button
+              className="text-white p-2 mr-3 rounded-lg hover:bg-[#3a496f]/60 transition-colors"
+              onClick={toggleMenu}
+              aria-label="Abrir menu"
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+
+
+
       </div>
 
-      {/* Menu mobile - CORRIGIDO */}
+      {/* Menu mobile */}
       {menuOpen && (
         <div className="md:hidden bg-[#1a365d] border-t border-[#3a496f]">
           <div className="flex flex-col items-center p-6 space-y-4">
@@ -112,16 +111,6 @@ export default function Navbar() {
               </NavButton>
             </div>
             
-            <div className="w-full">
-              <NavButton 
-                href="/portfolio/sobre"
-                onClick={toggleMenu}
-                className="block w-full text-center py-3 text-lg"
-              >
-                Sobre mim
-              </NavButton>
-            </div>
-
             {/* Botão para baixar currículo */}
             <div className="w-full pt-2">
               <button

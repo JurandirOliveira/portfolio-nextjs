@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Seção Hero + Skills */}
-      <div className="flex flex-col md:flex-row items-start  px-0 md:px-0 py-10">
+      <div className="flex flex-col md:flex-row items-start  px-0 md:px-0 py-5">
         {/* Hero à esquerda */}
         <div className="flex-1">
           <Hero />

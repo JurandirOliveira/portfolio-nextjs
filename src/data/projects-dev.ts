@@ -13,7 +13,17 @@ export type ProjectType = {
 };
 
 export const projects: ProjectType[] = [
-
+  {
+    slug: "web-portfolio",
+    title: "Website - Portfólio pessoal",
+    description:
+      "Site do meu portfólio, desenvolvido em NextJS e TainWind Css.",
+    stack: ["Next.JS", "Tailwind", "Photoshop", "Figma", "Git", "TypeScript"],
+    image: "/assets/portfolio/dev/web/web_portifolio_1.png",
+    demo: "https://portfolio-nextjs-one-hazel.vercel.app/",
+    tipourl:'Link do site',
+    highlight: true,
+  },
   {
     slug: "app-ecoheros",
     title: "App EcoHeros - Os Herois da ecologia",
@@ -56,7 +66,6 @@ export const projects: ProjectType[] = [
     demo:"http://www.jurandiroliveira.com.br/cb18",
     tipourl:'Link do site',
     extraImages: ["/assets/portfolio/dev/web/websiteCromos-2.png","/assets/portfolio/dev/web/websiteCromos-3.png","/assets/portfolio/dev/web/websiteCromos-4.png",],
-    highlight: true,
   },
   {
     slug: "website-lica",
