@@ -48,7 +48,7 @@ export default function ProjectCard({ slug, title, description, image, stack }: 
                   {tech}
                 </span>
               ) : (
-                <span />
+                <span></span>
               );
             })}
           </div>

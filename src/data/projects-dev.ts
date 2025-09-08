@@ -13,6 +13,18 @@ export type ProjectType = {
 };
 
 export const projects: ProjectType[] = [
+    {
+    slug: "ia-assistant",
+    title: "Assistente de IA",
+    description:
+      "Projeto de um Assistente de IA desenvolvido na Pós-Graduação IT-Valey inteligência Artificial. O FrontEnd foi desenvolvido em NextJS e o BackEnd com Python + FastAPI integrando os serviços da OpenAI.",
+    stack: ["Next.JS", "Tailwind", "Git", "TypeScript", "Python", "Fast API", "OpenAI", "Azure"],
+    image: "/assets/portfolio/dev/web/web_asistenteAi.png",
+    demo: "https://asistente-ia-iota.vercel.app/",
+    repo:"https://github.com/JurandirOliveira/Asistente_IA_NextJS",
+    tipourl:'Link do site',
+    highlight: true,
+  },
   {
     slug: "web-portfolio",
     title: "Website - Portfólio pessoal",
@@ -21,6 +33,7 @@ export const projects: ProjectType[] = [
     stack: ["Next.JS", "Tailwind", "Photoshop", "Figma", "Git", "TypeScript"],
     image: "/assets/portfolio/dev/web/web_portifolio_1.png",
     demo: "https://portfolio-nextjs-one-hazel.vercel.app/",
+    repo:"https://github.com/JurandirOliveira/portfolio-nextjs",
     tipourl:'Link do site',
     highlight: true,
   },
@@ -43,7 +56,6 @@ export const projects: ProjectType[] = [
     image: "/assets/portfolio/dev/app/appDinheiro.png",
     demo: "https://play.google.com/store/apps/details?id=com.jurandir52.contarDinheiro",
     tipourl:'Link na loja',
-    highlight: true,
   },
     {
     slug: "jogo-7-erros",

@@ -32,6 +32,7 @@ export const skillCategories = [
       { name: "SQL", image: "/assets/logos/sql.png" },
       { name: "Firebase", image: "/assets/logos/firebase.png" },
       { name: "API Rest", image: "/assets/logos/apirest.png" },
+      { name: "Fast API", image: "/assets/logos/fastapi.png"},
     ],
   },
   {
