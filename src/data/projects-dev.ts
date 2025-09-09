@@ -46,6 +46,7 @@ export const projects: ProjectType[] = [
     image: "/assets/portfolio/dev/app/appEcoheros.png",
     demo: "https://play.google.com/store/apps/details?id=com.jurandir52.EcoHeros",
     tipourl:'Link na loja',
+    highlight: true,
   },
       {
     slug: "app-contar-dinheiro",
@@ -56,17 +57,6 @@ export const projects: ProjectType[] = [
     image: "/assets/portfolio/dev/app/appDinheiro.png",
     demo: "https://play.google.com/store/apps/details?id=com.jurandir52.contarDinheiro",
     tipourl:'Link na loja',
-  },
-    {
-    slug: "jogo-7-erros",
-    title: "Jogo dos 7 erros",
-    description:
-      "Plataforma completa de e-commerce com carrinho de compras, checkout e painel administrativo.",
-    stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
-    image: "/assets/portfolio/dev/app/app7erros.png",
-    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.Diferencas",
-    tipourl:'Link na loja',
-    highlight: true,
   },
   {
     slug: "website-cromossomos",

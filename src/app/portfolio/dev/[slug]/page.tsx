@@ -24,7 +24,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
   const allImages = [project.image, ...(project.extraImages || [])];
 
   return (
-    <section className="w-full py-12 px-4 sm:px-6 lg:px-12">
+    <section className="w-full py-12 px-4 sm:px-6 lg:px-12 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Cabeçalho */}
         <div className="text-center lg:text-left">
@@ -84,7 +84,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               <Link
                 href={project.repo}
                 target="_blank"
-                className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg transition"
+                className="bg-gray-600 hover:bg-gray-900 text-white px-4 py-2 rounded-lg transition"
               >
                 Ver Código
               </Link>
@@ -97,7 +97,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
             >
               <span className="text-xl">←</span>
-              Anterior
+              <span className="hidden sm:inline">Anterior</span>
             </Link>
           )}
 
@@ -106,7 +106,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               href={`/portfolio/dev/${nextProject.slug}`}
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
             >
-              Próximo
+              <span className="hidden sm:inline">Próximo</span>
               <span className="text-xl">→</span>
             </Link>
           )}

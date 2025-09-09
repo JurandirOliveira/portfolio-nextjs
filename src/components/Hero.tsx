@@ -15,10 +15,10 @@ export default function Hero() {
 
   if (!mounted) {
     return (
-      <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 py-12 lg:py-20 gap-10 bg-gray-50">
+      <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 py-12 lg:py-20 gap-10 bg-gray-50 dark:bg-gray-900">
         {/* Loading skeleton */}
         <div className="flex-shrink-0">
-          <div className="w-48 h-48 rounded-full bg-gray-200 animate-pulse"></div>
+          <div className="w-48 h-48 rounded-full bg-gray-400 animate-pulse"></div>
         </div>
         <div className="max-w-2xl text-center md:text-left">
           <div className="h-8 bg-gray-200 rounded animate-pulse mb-4"></div>
@@ -30,7 +30,7 @@ export default function Hero() {
   }
 
   return (
-    <section className={`flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 lg:pb-70 lg:pt-30 gap-10 ${
+    <section className={`flex flex-col md:flex-row items-center justify-between px-6 md:px-16 md:ml-4 py-12 lg:pb-70 lg:pt-30 gap-10 ${
       theme === 'dark' ? 'bg-gray-900' : 'bg-gray-100'
     }`}>
 
@@ -41,8 +41,8 @@ export default function Hero() {
         <Image
           src="/assets/avatar.png"
           alt="Jurandir Oliveira"
-          width={200}
-          height={200}
+          width={300}
+          height={300}
           className="rounded-full shadow-lg"
           priority
         /></div>
@@ -70,12 +70,6 @@ export default function Hero() {
           para produtos e usuários.
         </p>
         <p> Navegue nos links acima e conheça um pouco do meu portfólio.</p>
-        {/* <Link
-          href="/portfolio/dev"
-          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors"
-        >
-          🔗 Explore meu portfólio
-        </Link> */}
       </div>
     </section>
   );

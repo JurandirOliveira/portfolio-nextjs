@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 export default function Skills() {
   return (
     <aside className="w-full lg:w-1/3 flex flex-col gap-10 px-4 lg:px-0 mt-8 lg:mt-0">
-      {skillCategories.map((category) => (
+    {skillCategories.map((category) => (
         <div key={category.category}>
           <h3 className="text-base font-bold text-gray-600 dark:text-gray-300 mb-3 whitespace-nowrap">
             {category.category}
