@@ -30,7 +30,7 @@ export default function PortfolioDesignPage() {
             Portfólio de Design & Ilustração
           </h1>
           <p className="mt-2 text-gray-600 dark:text-gray-300">
-            Explore meus trabalhos criativos em diferentes áreas do design.
+            Explore meus trabalhos criativos em diferentes áreas do design (Em construção).
           </p>
         </div>
 

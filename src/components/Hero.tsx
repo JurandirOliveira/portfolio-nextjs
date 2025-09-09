@@ -36,7 +36,7 @@ export default function Hero() {
 
       
       {/* Avatar */}
-      <div className="flex-shrink-0 2xl:ml-50">
+      <div className="flex-shrink-0 2xl:ml-50 ">
 
         <Image
           src="/assets/avatar.png"

@@ -31,7 +31,7 @@ export default function PortfolioDevPage() {
               Portfólio Desenvolvimento Front-End e Mobile
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Conheça meus projetos de desenvolvimento web e mobile.
+              Conheça meus projetos de desenvolvimento web e mobile (Em construção).
             </p>
           </div>
 
