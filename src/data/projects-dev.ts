@@ -32,6 +32,7 @@ export const projects: ProjectType[] = [
       "Site do meu portfólio, desenvolvido em NextJS e TainWind Css.",
     stack: ["Next.JS", "Tailwind", "Photoshop", "Figma", "Git", "TypeScript"],
     image: "/assets/portfolio/dev/web/web_portifolio_1.png",
+    extraImages:["/assets/portfolio/dev/web/web_portifolio_2.png","/assets/portfolio/dev/web/web_portifolio_3.png"],
     demo: "https://portfolio-nextjs-one-hazel.vercel.app/",
     repo:"https://github.com/JurandirOliveira/portfolio-nextjs",
     tipourl:'Link do site',
