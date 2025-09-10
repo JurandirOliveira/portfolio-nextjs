@@ -21,7 +21,7 @@ export default function PortfolioDevPage() {
   return (
     <section
       id="portfolio-dev"
-      className="w-full py-5 bg-blue-100 dark:bg-gray-900"
+      className="w-full py-5 bg-blue-100 dark:bg-gray-900 mt-1 mb-1"
     >
       <div className="px-6">
         {/* Cabeçalho */}
@@ -69,7 +69,7 @@ export default function PortfolioDevPage() {
 
         {/* Grid com animações */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 mb-10"
           initial="hidden"
           animate="visible"
           variants={{

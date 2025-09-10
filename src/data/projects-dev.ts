@@ -59,6 +59,16 @@ export const projects: ProjectType[] = [
     demo: "https://play.google.com/store/apps/details?id=com.jurandir52.contarDinheiro",
     tipourl:'Link na loja',
   },
+ {
+    slug: "app-jogo-diferencas",
+    title: "App Jogo dos 7 erros",
+    description:
+      "Jogo infantil desenvolvido em React Native com a plataforma Expo.",
+    stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
+    image: "/assets/portfolio/dev/app/app7erros.png",
+    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.diferencas",
+    tipourl:'Link na loja',
+  },
   {
     slug: "website-cromossomos",
     title: "Site da Equipe de Gincana Cromossomos Bons",

@@ -9,11 +9,36 @@ export type DesignProject = {
 
 export const designProjects: DesignProject[] = [
     {
-    id: "desenho",
-    image: "/assets/portfolio/design/desenho-0.png",
+    id: "desenho-01",
+    image: "/assets/portfolio/design/desenho-01.png",
+    description: "Série de estudos em lápis grafite explorando expressões faciais e detalhes realistas.",
+    section: "desenhos",
+  },
+      {
+    id: "desenho-03",
+    image: "/assets/portfolio/design/desenho-03.png",
     description: "Série de estudos em lápis grafite explorando expressões faciais e detalhes realistas.",
     section: "desenhos",
     highlight: true,
+  },
+       {
+    id: "desenho-04",
+    image: "/assets/portfolio/design/desenho-04.png",
+    description: "Série de estudos em lápis grafite explorando expressões faciais e detalhes realistas.",
+    section: "desenhos",
+  },
+  {
+    id: "desenho-02",
+    image: "/assets/portfolio/design/desenho-02.png",
+    description: "Série de estudos em lápis grafite explorando expressões faciais e detalhes realistas.",
+    section: "desenhos",
+    highlight: true,
+  },
+  {
+    id: "desenho-4",
+    image: "/assets/portfolio/design/desenho-matrix.png",
+    description: "Estudos com grafite, experimentando traços rápidos e minimalistas.",
+    section: "desenhos",
   },
   {
     id: "desenho-1",
@@ -36,9 +61,15 @@ export const designProjects: DesignProject[] = [
     highlight: true,
   },
   {
-    id:  "desenho-4",
+    id:  "desenho-5",
     image: "/assets/portfolio/design/desenho-4.png",
     description: "Trabalho experimental utilizando têmpera caseira à base de café e chá, explorando tonalidades quentes e textura orgânica em um retrato realista.",
+    section: "desenhos",
+  },
+   {
+    id:  "desenho-6",
+    image: "/assets/portfolio/design/desenho-05.png",
+    description: "Desenho com lapis sanguinea",
     section: "desenhos",
   },
   {
@@ -59,12 +90,17 @@ export const designProjects: DesignProject[] = [
     description: "Foto icônica restaurada e reinterpretada com técnicas digitais de recolorização, destacando luz, pele e expressão com maior impacto visual.",
     section: "edicao-imagens",
   },
+      {
+    id: "edicao-4",
+    image: "/assets/portfolio/design/edicao-4.png",
+    description: "Edição de foto no Adobe Photoshop.",
+    section: "edicao-imagens",
+  },
   {
     id: "foto-1",
     image: "/assets/portfolio/design/foto-1.png",
     description: "Fotografia de um filhote de coruja registrado durante um passeio de observação na natureza.",
     section: "fotografias",
-    highlight: true,
   },
   {
     id: "foto-2",

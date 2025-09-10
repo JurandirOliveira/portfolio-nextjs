@@ -58,14 +58,14 @@ export default function Hero() {
         <p className={`mb-4 leading-relaxed ${
           theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
         }`}>
-          Sou Jurandir Oliveira, Desenvolvedor Front-End, Designer e Ilustrador com mais de{" "}
-          <strong>25 anos de experiência</strong> em tecnologia e design — e nos últimos anos, especializado no
+          Sou Jurandir Oliveira, Desenvolvedor Front-End, Designer e Ilustrador com mais de 
+          20 anos de experiência em tecnologia e design — e nos últimos anos, especializado no
           desenvolvimento de aplicações web e mobile com React, React Native, Angular e Flutter.
         </p>
         <p className={`mb-6 leading-relaxed ${
           theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
         }`}>
-          Minha missão é criar interfaces rápidas, intuitivas e acessíveis,
+          Meu objetivo é sempre criar interfaces rápidas, intuitivas e acessíveis,
           unindo performance, usabilidade e design para gerar resultados reais
           para produtos e usuários.
         </p>

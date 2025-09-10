@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       {/* Aqui, coloque a classe dinamicamente */}
-      <body className="min-h-screen flex flex-col bg-white dark:bg-black">
+      <body className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           <main className="flex-1 ">{children}</main>
