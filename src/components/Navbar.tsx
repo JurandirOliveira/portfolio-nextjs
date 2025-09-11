@@ -38,7 +38,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Links Desktop - distribuídos igual à imagem */}
+        {/* Links Desktop */}
         <div className="hidden md:flex items-center gap-10">
           <NavButton 
             href="/portfolio/dev"

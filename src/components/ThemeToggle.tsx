@@ -27,17 +27,17 @@ export default function ThemeToggle() {
         <Image
           src="/assets/toggle-sol.png"
           alt="Modo claro"
-          width={50}
-          height={50}
-          className="w-15 h-8 md:w-20 md:h-12  object-contain"
+          width={222}
+          height={90}
+          className="w-16 h-12 md:w-22 md:h-12  object-contain"
         />
       ) : (
         <Image
           src="/assets/toggle-lua.png"
           alt="Modo escuro"
-          width={50}
-          height={50}
-          className="w-15 h-8 md:w-20 md:h-12  object-contain"
+          width={222}
+          height={90}
+          className="w-16 h-12 md:w-22 md:h-12  object-contain"
         />
       )}
     </button>

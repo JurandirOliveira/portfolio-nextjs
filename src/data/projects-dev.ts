@@ -20,6 +20,7 @@ export const projects: ProjectType[] = [
       "Projeto de um Assistente de IA desenvolvido na Pós-Graduação IT-Valey inteligência Artificial. O FrontEnd foi desenvolvido em NextJS e o BackEnd com Python + FastAPI integrando os serviços da OpenAI.",
     stack: ["Next.JS", "Tailwind", "Git", "TypeScript", "Python", "Fast API", "OpenAI", "Azure"],
     image: "/assets/portfolio/dev/web/web_asistenteAi.png",
+    extraImages:["/assets/portfolio/dev/web/web_asistenteAi-2.png"],
     demo: "https://asistente-ia-iota.vercel.app/",
     repo:"https://github.com/JurandirOliveira/Asistente_IA_NextJS",
     tipourl:'Link do site',

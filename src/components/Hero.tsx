@@ -43,7 +43,7 @@ export default function Hero() {
           alt="Jurandir Oliveira"
           width={300}
           height={300}
-          className="rounded-full shadow-lg"
+          // className="rounded-full shadow-lg"
           priority
         /></div>
 
