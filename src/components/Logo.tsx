@@ -35,7 +35,7 @@ export function Logo({ name, image, small = false }: LogoProps) {
 
   const trigger = (
     <motion.div
-      className={`flex items-center justify-center rounded-md cursor-pointer ${size}`}
+      className={`flex items-center justify-center rounded-md cursor-help ${size}`}
       whileHover={{ scale: 1.15 }}
       whileTap={{ scale: 0.95 }}
       transition={{ type: "spring", stiffness: 300 }}

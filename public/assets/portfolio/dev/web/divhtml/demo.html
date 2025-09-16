@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Imagem Responsiva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .image-container {
+            width: 100%;
+            margin: 20px 0;
+            /* border-radius: 12px; */
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .desktop-img {
+            display: block;
+        }
+
+        .mobile-img {
+            display: none;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .instructions {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .instructions h2 {
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .instructions ul {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        /* Media Query para dispositivos móveis */
+        @media (max-width: 768px) {
+            .desktop-img {
+                display: none;
+            }
+            
+            .mobile-img {
+                display: block;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programa de Diversidade Localiza</h1>
+        <p>Site responsivo desenvolvido em HTML CSS e Javascript</p>
+        
+        <div class="image-container">
+            <!-- Imagem para desktop -->
+            <img src="div_desktop.png" alt="Imagem para Desktop" class="desktop-img">
+            
+            <!-- Imagem para mobile -->
+            <img src="div_mobile.png" alt="Imagem para Mobile" class="mobile-img">
+        </div>
+        
+        
+    </div>
+</body>
+</html>

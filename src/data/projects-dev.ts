@@ -15,7 +15,7 @@ export type ProjectType = {
 export const projects: ProjectType[] = [
     {
     slug: "ia-assistant",
-    title: "Assistente de IA",
+    title: "2025 - Assistente de IA",
     description:
       "Projeto de um Assistente de IA desenvolvido na Pós-Graduação IT-Valey inteligência Artificial. O FrontEnd foi desenvolvido em NextJS e o BackEnd com Python + FastAPI integrando os serviços da OpenAI.",
     stack: ["Next.JS", "Tailwind", "Git", "TypeScript", "Python", "Fast API", "OpenAI", "Azure"],
@@ -28,7 +28,7 @@ export const projects: ProjectType[] = [
   },
   {
     slug: "web-portfolio",
-    title: "Website - Portfólio pessoal",
+    title: "2024 - Website - Portfólio pessoal",
     description:
       "Site do meu portfólio, desenvolvido em NextJS e TainWind Css.",
     stack: ["Next.JS", "Tailwind", "Photoshop", "Figma", "Git", "TypeScript"],
@@ -41,7 +41,7 @@ export const projects: ProjectType[] = [
   },
   {
     slug: "app-ecoheros",
-    title: "App EcoHeros - Os Herois da ecologia",
+    title: "2025 - App EcoHeros, Os Herois da ecologia",
     description:
       "Jogo infantil desenvolvido em React Native com a plataforma Expo.",
     stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
@@ -52,7 +52,7 @@ export const projects: ProjectType[] = [
   },
       {
     slug: "app-contar-dinheiro",
-    title: "App Contar Dinheiro",
+    title: "2025 - App Contar Dinheiro",
     description:
       "Jogo infantil desenvolvido em React Native com a plataforma Expo.",
     stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
@@ -62,7 +62,7 @@ export const projects: ProjectType[] = [
   },
  {
     slug: "app-jogo-diferencas",
-    title: "App Jogo dos 7 erros",
+    title: "2024 - App Jogo dos 7 erros",
     description:
       "Jogo infantil desenvolvido em React Native com a plataforma Expo.",
     stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
@@ -70,8 +70,19 @@ export const projects: ProjectType[] = [
     demo: "https://play.google.com/store/apps/details?id=com.jurandir52.diferencas",
     tipourl:'Link na loja',
   },
+    {
+    slug: "website-programa-diversidade",
+    title: "2020 - Website - Programa de Diversidade Localiza",
+    description:
+      "Site para promover um programa interno de diversidade. Foi desenvolvido em HTML, CSS - BootStrap e JavaScript a partir de Mockups no Figma. O site foi hospedado no Portal Localiza - Sharepoint.",
+    stack: ["HTML5", "CSS3", "Bootstrap","JavaScript", "Photoshop", "Figma", "Sharepoint"],
+    image: "/assets/portfolio/dev/web/web-diversidade.png",
+    demo:"/assets/portfolio/dev/web/divhtml/demo.html",
+    tipourl:'Demo',
+    highlight:true
+  },
   {
-    slug: "website-cromossomos",
+    slug: "2018 - website-cromossomos",
     title: "Site da Equipe de Gincana Cromossomos Bons",
     description:
       "Site desenvolvido para equipe de gincana Cromossomos Bons de Nova Lima - MG.",
@@ -82,13 +93,12 @@ export const projects: ProjectType[] = [
     extraImages: ["/assets/portfolio/dev/web/websiteCromos-2.png","/assets/portfolio/dev/web/websiteCromos-3.png","/assets/portfolio/dev/web/websiteCromos-4.png",],
   },
   {
-    slug: "website-lica",
-    title: "Site Salgados da Lica",
+    slug: "2017 - website-lica",
+    title: "Site Sabores da Lica",
     description:
       "Website desenvolvido em HTML CSS e Javascript para uma pequena empreendedora",
     stack: ["HTML5", "CSS3", "JavaScript", "Photoshop"],
     image: "/assets/portfolio/dev/web/website-Lica.png",
-    highlight: true,
   }
 ];
 
