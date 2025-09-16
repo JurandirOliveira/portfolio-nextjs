@@ -81,6 +81,16 @@ export const projects: ProjectType[] = [
     tipourl:'Demo',
     highlight:true
   },
+    {
+    slug: "website-portal-candidato",
+    title: "2020 - Website - Portal do Candidato",
+    description:
+      "Aplicação desenvolvida em Angular, onde os candidatos poderiam acompanhar o status de suas candidaturas.",
+    stack: ["Angular", "SASS", "TypeScript","Figma", "API Rest"],
+    image: "/assets/portfolio/dev/web/web-portalcandidato.png",
+    demo:"",
+    tipourl:'Demo',
+  },
   {
     slug: "2018 - website-cromossomos",
     title: "Site da Equipe de Gincana Cromossomos Bons",
