@@ -51,6 +51,17 @@ export const projects: ProjectType[] = [
     highlight: true,
   },
       {
+    slug: "app-dagente",
+    title: "2020 a 2024 -  App Dagente",
+    description:
+      "Aplicação interna da empresa que disponibiliza serviços de RH a seus colaboradores (Batida e tratativa de ponto, Marcação e gestão de férias, consulta a contracheque, extrato de plano de saúde, benefícios e diversas outras funcionalidades). A aplicação era um microfrontend com um container em Angular e diversos módulos em React. A parte Mobile foi desenvolvida em Flutter consumindo os módulos Rect",
+    stack: ["Angular", "React", "API Rest","Azure", "TypeScript", "Figma", "Sharepoint"],
+    image: "/assets/portfolio/dev/web/web-dagente.png",
+    demo:"",
+    tipourl:'Demo',
+    highlight:true
+  },
+      {
     slug: "app-contar-dinheiro",
     title: "2025 - App Contar Dinheiro",
     description:
@@ -75,11 +86,10 @@ export const projects: ProjectType[] = [
     title: "2020 - Website - Programa de Diversidade Localiza",
     description:
       "Site para promover um programa interno de diversidade. Foi desenvolvido em HTML, CSS - BootStrap e JavaScript a partir de Mockups no Figma. O site foi hospedado no Portal Localiza - Sharepoint.",
-    stack: ["HTML5", "CSS3", "Bootstrap","JavaScript", "Photoshop", "Figma", "Sharepoint"],
+    stack: ["HTML5", "CSS3", "Bootstrap","JavaScript", "Photoshop", "Figma"],
     image: "/assets/portfolio/dev/web/web-diversidade.png",
     demo:"/assets/portfolio/dev/web/divhtml/demo.html",
     tipourl:'Demo',
-    highlight:true
   },
     {
     slug: "website-portal-candidato",
