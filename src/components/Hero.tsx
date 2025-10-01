@@ -30,7 +30,7 @@ export default function Hero() {
   }
 
   return (
-    <section className={`flex flex-col md:flex-row items-center justify-between px-6 md:px-16 md:ml-4 py-12 lg:pb-70 lg:pt-30 gap-10 ${
+    <section className={`flex flex-col xl:flex-row items-center justify-between px-6 md:px-16 md:ml-4 py-12 lg:pb-70 lg:pt-30 gap-10 ${
       theme === 'dark' ? 'bg-gray-900' : 'bg-gray-100'
     }`}>
 
