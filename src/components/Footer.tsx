@@ -72,14 +72,14 @@ export default function Footer() {
           >
             <Linkedin className="w-7 h-7" />
           </a>
-          {/* <a
-            href="https://instagram.com/"
+          <a
+            href="https://www.instagram.com/apps.jurandiroliveira/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-200 hover:text-pink-500"
           >
             <Instagram className="w-7 h-7" />
-          </a> */}
+          </a>
                  <a
             href="https://play.google.com/store/apps/developer?id=Jurandir+Oliveira"
             target="_blank"
