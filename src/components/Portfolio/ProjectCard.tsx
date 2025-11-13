@@ -40,13 +40,13 @@ export default function ProjectCard({ slug, title, description, image, stack }: 
         </div>
 
         {/* Skillss */}
-        <div className="flex flex-wrap p-2 mr-2 mb-5">
+        <div className="flex flex-wrap p-2 mr-0 mb-5 gap-4">
           {stack.map((tech) => {
             const skill = findSkillByName(tech);
             return skill ? (
               <span
                 key={tech}
-                className="text-xs px-2 py-1 rounded text-gray-700 dark:text-gray-200 flex-col flex items-center gap-1 mt-7"
+                className="text-xs px-0 py-1 gap-1 mt-1 justify-between text-gray-700 dark:text-gray-200 flex-col flex items-center "
               >
                 <Logo name={skill.name} image={skill.image} small />
                 {tech}

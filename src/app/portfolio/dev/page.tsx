@@ -23,7 +23,7 @@ export default function PortfolioDevPage() {
       id="portfolio-dev"
       className="w-full py-5 bg-blue-100 dark:bg-gray-900 mt-1 mb-1"
     >
-      <div className="px-6">
+      <div className="px-4 sm:px-6">
         {/* Cabeçalho */}
         <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
           <div>
@@ -42,7 +42,7 @@ export default function PortfolioDevPage() {
               onChange={(e) => setFilter(e.target.value)}
               value={filter}
             >
-              <option value="all">Todas as categorias</option>
+              <option value="all">Todas as Skills e Ferramentas</option>
               {allSkills.map((skill) => (
                 <option key={skill} value={skill}>
                   {skill}
