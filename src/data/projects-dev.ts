@@ -13,14 +13,27 @@ export type ProjectType = {
 };
 
 export const projects: ProjectType[] = [
-    {
+   {
+    slug: "app-carnavalbh",
+    title: "2026 - Carnaval BH",
+    description:
+      "App com a programação do Carnaval de Belo Horizonte e região, desenvolvido em React Native com a plataforma Expo.",
+    stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
+    image: "/assets/portfolio/dev/app/carnavalBH.png",
+    extraImages:["/assets/portfolio/dev/app/carnavalBH2.png",],
+    repo:"",
+    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.CarnavalBH",
+    tipourl:'Link na loja',
+    highlight: true,
+  },
+  {
     slug: "ia-assistant",
     title: "2025 - Assistente de IA",
     description:
       "Projeto de um Assistente de IA desenvolvido na Pós-Graduação IT-Valey inteligência Artificial. O FrontEnd foi desenvolvido em NextJS e o BackEnd com Python + FastAPI integrando os serviços da OpenAI.",
     stack: ["Next.JS", "Tailwind", "Git", "TypeScript", "Python", "Fast API", "OpenAI", "Azure"],
     image: "/assets/portfolio/dev/web/web_asistenteAi.png",
-    extraImages:["/assets/portfolio/dev/web/web_asistenteAi-2.png"],
+    extraImages:["/assets/portfolio/dev/app/web_asistenteAi-2.png"],
     demo: "https://asistente-ia-iota.vercel.app/",
     repo:"https://github.com/JurandirOliveira/Asistente_IA_NextJS",
     tipourl:'Link do site',
