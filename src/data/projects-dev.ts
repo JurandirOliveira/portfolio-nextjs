@@ -22,7 +22,7 @@ export const projects: ProjectType[] = [
     image: "/assets/portfolio/dev/app/simuladosDetran.png",
     extraImages:[],
     repo:"",
-    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.simulados",
+    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.simuladosDetran",
     tipourl:'Link na loja',
     highlight: true,
   },
