@@ -13,6 +13,19 @@ export type ProjectType = {
 };
 
 export const projects: ProjectType[] = [
+     {
+    slug: "app-simuladosDetran",
+    title: "2026 - Simulados Detran",
+    description:
+      "App perfeito para quem quer garantir a aprovação na prova teórica do DETRAN.",
+    stack: ["React Native", "Expo", "Photoshop", "Figma", "Git"],
+    image: "/assets/portfolio/dev/app/simuladosDetran.png",
+    extraImages:[],
+    repo:"",
+    demo: "https://play.google.com/store/apps/details?id=com.jurandir52.simulados",
+    tipourl:'Link na loja',
+    highlight: true,
+  },
    {
     slug: "app-carnavalbh",
     title: "2026 - Carnaval BH",
